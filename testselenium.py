@@ -13,7 +13,7 @@ driver = webdriver.Chrome(service=s)
 driver.get("http://www.google.com")
 
 # Find the search box element and enter a query
-search_box = driver.find_element(By.XPATH,"/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea")
+search_box = driver.find_element(By.NAME,"q")
 search_box.send_keys("PBRU")
 
 search_box.send_keys(Keys.RETURN)
